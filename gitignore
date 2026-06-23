@@ -1,0 +1,29 @@
+# ── Logs (generated at runtime, never commit) ─────────────────
+logs/
+*.log
+*.log.*
+
+# ── Temp bootstrap files ───────────────────────────────────────
+win11setup_bs_*.ps1
+wsl2_postboot.bat
+
+# ── Windows junk ───────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── macOS junk (in case edited on Mac) ────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Editor folders ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ── Test / scratch files ───────────────────────────────────────
+scratch.*
+test_*
+_test/
