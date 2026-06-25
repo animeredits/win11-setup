@@ -214,7 +214,7 @@ if ($docker) {
     }
 
     # Verify Docker daemon
-    $dockerTest = docker run --rm hello-world 2>&1
+    docker run --rm hello-world 2>&1 | Out-Null
     if ($LASTEXITCODE -eq 0) {
         Write-Log '  Docker daemon: working ✓'
     } else {
